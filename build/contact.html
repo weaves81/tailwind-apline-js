@@ -66,16 +66,35 @@
     </header>
     <main class="flex-1">
 
-<section class="bg-purple text-white px-3 md:px-0 py-8 lg:py-16">
+<section class="bg-purple text-white px-3 lg:px-0 py-8 lg:py-16">
     <div class="container mx-auto">
-        <h1 class="text-4xl text-white font-featured">Welcome to Commerce Hogg.</h1>
+        <h1 class="text-4xl text-white font-featured">Get in Touch</h1>
         <p class="mt-4 text-base sm:text-lg lg:text-xl text-indigo-100">
-            Methodical Full Stack Senior Magento Developer with an eye for detail.
+            Get in touch and see if we can work together.
         </p>
     </div>
 </section>
-<div class="container mx-auto grid items-center md:grid-cols-2 gap-24 sections-spacing px-3 md:px-0">
-
+<div class="container mx-auto grid items-center md:grid-cols-2 gap-24 sections-spacing px-3 lg:px-0">
+    <form data-netlify="true" name="contact" method="POST" action="/contact">
+        <input type="hidden" name="form-name" value="contact">
+        <label class="block pt-8 text-purple">
+            <p class="font-bold">Name:</p>
+            <input name="name" type="text" required="" class="mt-2 w-full rounded border-gray-300">
+        </label>
+        <label class="block pt-8 text-purple">
+            <p class="font-bold">Email:</p>
+            <input name="email" type="email" required="" class="mt-2 w-full rounded border-gray-300">
+        </label>
+        <label class="block pt-8 text-purple">
+            <p class="font-bold">Message:</p>
+            <textarea name="message" rows="7" required="" class="mt-2 w-full rounded border-gray-300"></textarea>
+        </label>
+        <div class="block pt-8">
+            <button type="submit" class="button ml-auto text-white bg-purple px-8 py-3 rounded">
+                Submit
+            </button>
+        </div>
+    </form>
 </div>
     </main>
     <footer class="container mx-auto text-gray-600 mb-6 mt-8 sm:mt-16 text-sm px-3 lg:px-0">
